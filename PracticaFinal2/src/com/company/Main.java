@@ -78,69 +78,50 @@ public class Main {
                 segundo=true;
             }
             if (opcion==3 && primero==true && segundo==true) {
-                if (viajero1 == mediaViajeros && viajero1!=0) {
-                    System.out.println("El viajero 1 no debe nada");
+                if (viajero1==0) System.out.println("el viajero 1 no va de viaje");
+                else if(viajero1 > mediaViajeros) {
+                    precio1 = viajero1 - mediaViajeros;
+                    System.out.println("Al viajero 1 se le debe " + precio1);
+                }else if(viajero1< mediaViajeros){
+                    precio1 = mediaViajeros - viajero1 ;
+                    System.out.println("El viajero 1 tiene que poner " + precio1);
+                }else if(viajero1 == mediaViajeros)System.out.println("El viajero 1 no debe nada");
 
+                if (viajero2==0) System.out.println("el viajero 2 no va de viaje");
+                else if(viajero2 > mediaViajeros) {
+                    precio2 = viajero2 - mediaViajeros;
+                    System.out.println("Al viajero 2 se le debe " + precio2);
+                }else if(viajero2< mediaViajeros){
+                    precio2 = mediaViajeros - viajero1 ;
+                    System.out.println("El viajero 2 tiene que poner " + precio2);
+                }else if(viajero2 == mediaViajeros)System.out.println("El viajero 2 no debe nada");
 
-                    if (viajero1 > mediaViajeros) {
-                        precio1 = mediaViajeros - viajero1;
-                        System.out.println("El viajero 1 ha pagado de más " + precio1);
-                    } else {
-                        precio1 = mediaViajeros - viajero1;
-                        System.out.println("El viajero 1 debe " + precio1);
-                    }
-                }
+                if (viajero3==0) System.out.println("el viajero 3 no va de viaje");
+                else if(viajero3 > mediaViajeros) {
+                    precio3 = viajero3 - mediaViajeros;
+                    System.out.println("Al viajero 3 se le debe " + precio3);
+                }else if(viajero3< mediaViajeros){
+                    precio3 = mediaViajeros - viajero3 ;
+                    System.out.println("El viajero 3 tiene que poner " + precio3);
+                }else if(viajero3 == mediaViajeros)System.out.println("El viajero 3 no debe nada");
 
-                if (viajero2 == mediaViajeros && viajero2!=0) {
-                    System.out.println("El viajero 2 no debe nada");
+                if (viajero4==0) System.out.println("el viajero 4 no va de viaje");
+                else if(viajero4 > mediaViajeros) {
+                    precio4 = viajero4 - mediaViajeros;
+                    System.out.println("Al viajero 4 se le debe " + precio4);
+                }else if(viajero4< mediaViajeros){
+                    precio4 = mediaViajeros - viajero4 ;
+                    System.out.println("El viajero 4 tiene que poner " + precio4);
+                }else if(viajero4 == mediaViajeros)System.out.println("El viajero 4 no debe nada");
 
-
-                    if (viajero2 > mediaViajeros) {
-                        precio2 = mediaViajeros - viajero2;
-                        System.out.println("El viajero 2 ha pagado de más " + precio2);
-                    } else {
-                        precio2 = mediaViajeros - viajero2;
-                        System.out.println("El viajero 2 debe " + precio2);
-                    }
-                }
-
-                if (viajero3 == mediaViajeros && viajero3!=0) {
-                    System.out.println("El viajero 3 no debe nada");
-
-
-                    if (viajero3 > mediaViajeros) {
-                        precio3 = mediaViajeros - viajero3;
-                        System.out.println("El viajero 3 ha pagado de más " + precio3);
-                    } else {
-                        precio3 = mediaViajeros - viajero3;
-                        System.out.println("El viajero 3 debe " + precio3);
-                    }
-                }
-
-                if (viajero4 == mediaViajeros && viajero4!=0) {
-                    System.out.println("El viajero 4 no debe nada");
-
-
-                    if (viajero4 > mediaViajeros) {
-                        precio4 = mediaViajeros - viajero4;
-                        System.out.println("El viajero 4 ha pagado de más " + precio4);
-                    } else {
-                        precio4 = mediaViajeros - viajero4;
-                        System.out.println("El viajero 4 debe " + precio4);
-                    }
-                }
-
-                if (viajero5 == mediaViajeros && viajero5!=0) {
-                    System.out.println("El viajero 5 no debe nada");
-
-                    if (viajero5 > mediaViajeros) {
-                        precio5 = mediaViajeros - viajero5;
-                        System.out.println("El viajero 5 ha pagado de más " + precio5);
-                    } else {
-                        precio5 = mediaViajeros - viajero5;
-                        System.out.println("El viajero 5 debe " + precio5);
-                    }
-                }
+                if (viajero5==0) System.out.println("el viajero 5 no va de viaje");
+                else if(viajero5 > mediaViajeros) {
+                    precio5 = viajero5 - mediaViajeros;
+                    System.out.println("Al viajero 5 se le debe " + precio5);
+                }else if(viajero5< mediaViajeros){
+                    precio5 = mediaViajeros - viajero5 ;
+                    System.out.println("El viajero 5 tiene que poner " + precio5);
+                }else if(viajero5 == mediaViajeros)System.out.println("El viajero 5 no debe nada");
 
             }
         }while (opcion!=4);
